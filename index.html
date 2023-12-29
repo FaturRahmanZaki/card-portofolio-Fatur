@@ -1,105 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatur Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-7">
+            <div class="card p-3 py-4">
+              <div class="text-center">
+                <img src="assets/images/profile.jpg" width="100" class="rounded-circle" />
+              </div>
 
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+              <div class="text-center mt-3">
+                <span class="bg-secondary p-1 px-4 rounded text-white">Front-end Developer </span>
+                <h5 class="mt-2 mb-0">Fatur Rahman Zaki</h5>
+                <span>Mahasiswa</span>
 
-    <!--====== Title ======-->
-    <title>Card-FaturRahman</title>
+                <div class="px-4 mt-1">
+                  <p class="fonts">
+                    perkenalkan Saya Fatur Rahman Zaki yang sekarang berpendidikan di polikteknik STMI jakarta dengan jurusan Sistem informasi dan saya memiliki minat dibidang website dan hobi saya ketika luang yaitu menonton anime dan baca
+                    manga
+                  </p>
+                </div>
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/fatur.jpg" type="image/png">
+                <ul class="social-list">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/ftrrahmanzk" target="_blank"><i class="fa fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/fatur-rahman-zaki-08170b229/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                  </li>
+                </ul>
 
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-
-    <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/cb-slider.css">
-    
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
-</head>
-
-<body>
-    
-    <!--====== PRELOADER PART START ======-->
-
-    <!--====== PRELOADER ENDS START ======-->
-
-    <!--====== HEADER PART START ======-->
-
-    <header class="header-area">
-        <ul class="cb-slideshow">
-            <li><span>Image 01</span></li>
-            <li><span>Image 02</span></li>
-            <li><span>Image 03</span></li>
-            <li><span>Image 04</span></li>
-            <li><span>Image 05</span></li>
-            <li><span>Image 06</span></li>
-        </ul>
-        <div class="header-card" >
-            <div class="header-card-wrapper wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
-                <div class="card-header bg_cover" style="background-image: url(assets/images/card-bg.jpg)"></div> <!-- card-header -->
-                <div class="card-profile">
-                    <img src="assets/images/profile.jpg" alt="Profile">
-                </div> <!-- card-profile -->
-                <div class="card-content text-center">
-                    <h3 class="card-title">Fatur Rahman Zaki</h3>
-                    <p class="text">you can call me fatur, memiliki minat dibidang Front End Developer, saat ini berkuliah di politeknik STMI JAKARTA</p>
-                    <a href="http://faturrahmanzaki.github.io/" class="main-btn" > Ingin Mengenal lebih jauh?</a>
-                </div> <!-- card-content -->
-                <div class="card-social text-center">
-                    <ul>
-                        <li><a href="https://www.facebook.com/faturrahman.zaki.3958"  target="_blank"><i class="lni-facebook-filled"></i></a></li>
-                        <li><a href="https://twitter.com/FaturZaki" target="_blank"><i class="lni-twitter-original"></i></a></li>
-                        <li><a href="https://www.instagram.com/ftrrahmanzk/" target="_blank"><i class="lni-instagram-original"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/fatur-rahman-zaki-08170b229/" target="_blank"><i class="lni-linkedin-original"></i></a></li>
-                    </ul>
-                </div> <!-- card-social -->
-            </div> <!-- header-card -->
-        </div> <!-- header-card -->
-    </header>
-
-    <!--====== HEADER PART ENDS ======-->
-
-
-
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-
-    <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
-
-
-    <!--====== WOW js ======-->
-    <script src="assets/js/wow.min.js"></script>
-
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-
-</body>
-
+                <div class="buttons">
+                  <a href="https://faturrahmanzaki.github.io/" class="btn"id="btn-message">Personal Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

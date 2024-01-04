@@ -6,7 +6,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: gray;
   }
   
   .card-container {
@@ -18,7 +17,6 @@ body {
 
 .card {
   max-width: 800px; /* Lebar maksimum kartu */
-  background-color: #ffffff; /* Warna latar belakang kartu */
   border-radius: 10px; /* Corner radius untuk menampilkan ujung kartu */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow untuk efek elevasi */
 }

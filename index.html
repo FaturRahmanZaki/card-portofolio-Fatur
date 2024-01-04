@@ -32,7 +32,6 @@
                     manga
                   </p>
                 </div>
-
                 <ul class="social-list">
                   <li>
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -57,5 +56,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // List of image URLs for the slideshow
+      const imageUrls = ['assets/images/bg-1.jpg', 'assets/images/bg-2.jpg', 'assets/images/bg-3.jpg'];
+      let currentImageIndex = 0;
+
+      function changeBackground() {
+        document.body.style.backgroundImage = `url('${imageUrls[currentImageIndex]}')`;
+        currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+      }
+
+      // Change background every 5 seconds (5000 milliseconds)
+      setInterval(changeBackground, 4000);
+    </script>
+
   </body>
 </html>

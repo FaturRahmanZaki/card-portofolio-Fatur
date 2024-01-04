@@ -1,90 +1,91 @@
-/* style.css */
-
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-  }
-  
-  .card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0; 
+  transition: background-image 1.5s ease; /* Add transition for background-image */
+     
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
 
 .card {
   max-width: 800px; /* Lebar maksimum kartu */
   border-radius: 10px; /* Corner radius untuk menampilkan ujung kartu */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow untuk efek elevasi */
 }
-.card:before{
-    
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    width:4px;
-    height:100%;
-    background-color:#E1BEE7;
-    transform:scaleY(1);
-    transition:all 0.5s;
-    transform-origin: bottom
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #e1bee7;
+  transform: scaleY(1);
+  transition: all 0.5s;
+  transform-origin: bottom;
 }
 
-.card:after{
-    
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    width:4px;
-    height:100%;
-    background-color:#8E24AA;
-    transform:scaleY(0);
-    transition:all 0.5s;
-    transform-origin: bottom
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #8e24aa;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: bottom;
 }
 
-.card:hover::after{
-    transform:scaleY(1);
+.card:hover::after {
+  transform: scaleY(1);
 }
 
-
-.fonts{
-    font-size:11px;
+.fonts {
+  font-size: 11px;
 }
 
-.social-list{
-    display:flex;
-    list-style:none;
-    justify-content:center;
-    padding:0;
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
 }
 
-.social-list li{
-    padding:10px;
-    color:#8E24AA;
-    font-size:19px;
+.social-list li {
+  padding: 10px;
+  color: #8e24aa;
+  font-size: 19px;
 }
 .social-list li a {
-    color: #800080; /* Warna ungu untuk ikon media sosial */
-  }
+  color: #800080; /* Warna ungu untuk ikon media sosial */
+}
 
 #btn-message {
-    color: #800080; /* Warna teks ungu */
-    background-color: transparent;
-    border: 2px solid #800080; /* Border berwarna ungu */
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    transition: border 0.3s, font 0.3s; /* Efek transisi untuk border dan font */
-  }
-  
-  #btn-message:hover {
-    border: 3px solid #800080; /* Border semakin tebal dan berwarna ungu saat di-hover */
-    background-color: #800080;
-    color: white;
-  }
+  color: #800080; /* Warna teks ungu */
+  background-color: transparent;
+  border: 2px solid #800080; /* Border berwarna ungu */
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: border 0.3s, font 0.3s; /* Efek transisi untuk border dan font */
+}
+
+#btn-message:hover {
+  border: 3px solid #800080; /* Border semakin tebal dan berwarna ungu saat di-hover */
+  background-color: #800080;
+  color: white;
+}
